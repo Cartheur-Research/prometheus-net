@@ -55,9 +55,7 @@ public sealed class MetricServerMiddleware
         // We allow the "Accept" HTTP header to be overridden by the "accept" query string parameter.
         // This is mainly for development purposes (to make it easier to request OpenMetrics format via browser URL bar).
         if (request.Query.TryGetValue("accept", out var acceptValuesFromQuery))
-#pragma warning disable CS8604 // Possible null reference argument.
-            acceptHeaderValues = string.Join(",", acceptValuesFromQuery);
-#pragma warning restore CS8604 // Possible null reference argument.
+            acceptHeaderValues = string.Join(",", acceptValuesFromQuery.ToArray());
 
         foreach (var candidate in ExtractAcceptableMediaTypes(acceptHeaderValues)
                      .OrderByDescending(mt => mt.Quality.GetValueOrDefault(1)))

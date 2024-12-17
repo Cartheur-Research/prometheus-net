@@ -6,10 +6,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resources", "Resources\Reso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests.NetCore", "Tests.NetCore\Tests.NetCore.csproj", "{09EED3ED-25BF-4942-8428-383B51DA0D86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.NetFramework", "Tests.NetFramework\Tests.NetFramework.csproj", "{A45A8238-966E-482D-BF1A-95A25BB3169B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester.NetFramework", "Tester.NetFramework\Tester.NetFramework.csproj", "{377A530B-43FA-4980-97DF-C21BB32B4F77}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tester.NetCore", "Tester.NetCore\Tester.NetCore.csproj", "{5CB67E67-72BD-4514-97D1-336F72F82BBF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prometheus.AspNetCore", "Prometheus.AspNetCore\Prometheus.AspNetCore.csproj", "{7D0A36BB-5606-4D8F-B048-621C76B22881}"
@@ -23,10 +19,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmark.NetCore", "Benchmark.NetCore\Benchmark.NetCore.csproj", "{074E91E7-37BE-459E-B42F-96F315586418}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prometheus.NetFramework.AspNet", "Prometheus.NetFramework.AspNet\Prometheus.NetFramework.AspNet.csproj", "{25C05E15-A8F8-4F36-A35C-4004C0948305}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester.NetFramework.AspNet", "Tester.NetFramework.AspNet\Tester.NetFramework.AspNet.csproj", "{1C13A89A-563E-4C4C-83F9-0DCCCFFDFA86}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prometheus.AspNetCore.HealthChecks", "Prometheus.AspNetCore.HealthChecks\Prometheus.AspNetCore.HealthChecks.csproj", "{4B630AF4-71AD-4CF1-AD4E-D0608B426109}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tester.AspNetCore.HealthChecks", "Tester.AspNetCore.HealthChecks\Tester.AspNetCore.HealthChecks.csproj", "{7A0E037C-501E-4FF5-BEEC-0132C809AF67}"
@@ -39,8 +31,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Web", "Sample.Web\Sa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Grpc", "Sample.Grpc\Sample.Grpc.csproj", "{0A53812C-89AD-40E7-9A8C-52C82DD433AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Console.NetFramework", "Sample.Console.NetFramework\Sample.Console.NetFramework.csproj", "{E4D772AF-BFA0-4EA9-AE3C-C7326A42F1E5}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Web.DifferentPort", "Sample.Web.DifferentPort\Sample.Web.DifferentPort.csproj", "{1E0B26AD-3CA0-495A-9F47-C8497D641F7D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Grpc.Client", "Sample.Grpc.Client\Sample.Grpc.Client.csproj", "{74B81DD3-FC37-4760-ABC9-667265B28237}"
@@ -50,8 +40,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Console.DotNetMeters", "Sample.Console.DotNetMeters\Sample.Console.DotNetMeters.csproj", "{1287EBE0-0EF2-4283-9AF9-747AD4D77F6B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prometheus", "Prometheus\Prometheus.csproj", "{E585417C-F7DD-4D8C-A0C5-D4B79594634A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Web.NetFramework", "Sample.Web.NetFramework\Sample.Web.NetFramework.csproj", "{35C90741-497A-465C-A018-633FAD414D0D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Console.NoAspNetCore", "Sample.Console.NoAspNetCore\Sample.Console.NoAspNetCore.csproj", "{673B5DEC-8530-4226-B923-9D97A6AC29DB}"
 EndProject
