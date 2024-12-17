@@ -1,4 +1,4 @@
-﻿#if NET6_0_OR_GREATER
+﻿using System;
 using System.Buffers;
 using System.Collections.Concurrent;
 using System.Diagnostics;
@@ -455,7 +455,7 @@ public sealed class MeterAdapter : IDisposable
             labelValues[i] = tags[index].Value?.ToString() ?? "";
         }
 
-        return labelValues[..prometheusLabelValueIndexes.Length];
+        return labelValues.Slice(0, prometheusLabelValueIndexes.Length);
     }
 
     // We use these dictionaries to register Prometheus metrics on-demand for different instruments.
@@ -513,4 +513,3 @@ public sealed class MeterAdapter : IDisposable
         return result;
     }
 }
-#endif

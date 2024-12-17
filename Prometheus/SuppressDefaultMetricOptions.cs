@@ -19,13 +19,8 @@ public sealed class SuppressDefaultMetricOptions
     {
         SuppressProcessMetrics = false,
         SuppressDebugMetrics = false,
-#if NET
         SuppressEventCounters = false,
-#endif
-
-#if NET6_0_OR_GREATER
         SuppressMeters = false
-#endif
     };
 
     /// <summary>
@@ -38,19 +33,15 @@ public sealed class SuppressDefaultMetricOptions
     /// </summary>
     public bool SuppressDebugMetrics { get; set; }
 
-#if NET
     /// <summary>
     /// Suppress the default .NET Event Counter integration.
     /// </summary>
     public bool SuppressEventCounters { get; set; }
-#endif
 
-#if NET6_0_OR_GREATER
     /// <summary>
     /// Suppress the .NET Meter API integration.
     /// </summary>
     public bool SuppressMeters { get; set; }
-#endif
 
     internal sealed class ConfigurationCallbacks
     {

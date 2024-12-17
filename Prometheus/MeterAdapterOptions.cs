@@ -1,5 +1,4 @@
-﻿#if NET6_0_OR_GREATER
-using System.Diagnostics.Metrics;
+﻿using System.Diagnostics.Metrics;
 
 namespace Prometheus;
 
@@ -37,4 +36,3 @@ public sealed record MeterAdapterOptions
     /// </summary>
     public Func<Instrument, double[]> ResolveHistogramBuckets { get; set; } = _ => DefaultHistogramBuckets;
 }
-#endif

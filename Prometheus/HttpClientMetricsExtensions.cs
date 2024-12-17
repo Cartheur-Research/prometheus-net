@@ -59,7 +59,7 @@ public static class HttpClientMetricsExtensions
     {
         options ??= new HttpClientExporterOptions();
 
-        var identity = new HttpClientIdentity(builder.Name);
+        var identity = new HttpClientIdentity(builder.Name ?? string.Empty);
 
         if (options.InProgress.Enabled)
         {

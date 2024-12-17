@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Extensions.DiagnosticAdapter;
+
 
 #if NET6_0_OR_GREATER
 using System.Diagnostics.Metrics;
@@ -94,10 +96,10 @@ namespace tester
             // With MetricPusherTester you might get a 1st push already before it fails but after that it should stop pushing.
             //Metrics.DefaultRegistry.AddBeforeCollectCallback(() => throw new ScrapeFailedException());
 
-#if NETCOREAPP
-            var diagnosticSourceRegistration = DiagnosticSourceAdapter.StartListening();
-            var eventCounterRegistration = EventCounterAdapter.StartListening();
-#endif
+//#if NETCOREAPP
+//            var diagnosticSourceRegistration = DiagnosticSourceAdapter.StartListening();
+//            var eventCounterRegistration = EventCounterAdapter.StartListening();
+//#endif
 
 #if NET6_0_OR_GREATER
             var meter = new Meter("sample.dotnet.meter", "1.2.3");

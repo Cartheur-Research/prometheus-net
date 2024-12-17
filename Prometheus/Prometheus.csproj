@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
-		<TargetFrameworks>net6.0;net7.0;netstandard2.0</TargetFrameworks>
+		<TargetFrameworks>net9.0</TargetFrameworks>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
-		<TargetFrameworks>net462;net6.0;net7.0;netstandard2.0</TargetFrameworks>
+		<TargetFrameworks>net48</TargetFrameworks>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -81,9 +81,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Http" Version="3.1.0" />
-		<PackageReference Include="Microsoft.Extensions.ObjectPool" Version="7.0.0" />
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+		<PackageReference Include="Microsoft.Bcl.HashCode" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.ObjectPool" Version="9.0.0" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
 	</ItemGroup>
 
 </Project>
