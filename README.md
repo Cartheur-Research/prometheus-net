@@ -6,10 +6,7 @@ This is a .NET library for instrumenting your applications and exporting metrics
 
 ![](Screenshot.png)
 
-The library targets the following runtimes (and newer):
-
-* .NET Framework 4.6.2
-* .NET 6.0
+The library targets dotnet 9.0.
 
 # Table of contents
 
