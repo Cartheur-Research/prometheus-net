@@ -8,7 +8,11 @@ This is a .NET library for instrumenting your applications and exporting metrics
 
 The library targets dotnet 9.0.
 
-# Table of contents
+## Simplest way
+
+* `podman run -p 9090:9090 docker.io/prom/prometheus`
+
+## Table of contents
 
 * [Best practices and usage](#best-practices-and-usage)
 * [Quick start](#quick-start)
