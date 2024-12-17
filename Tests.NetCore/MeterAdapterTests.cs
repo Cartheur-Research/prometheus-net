@@ -97,7 +97,7 @@ public sealed class MeterAdapterTests : IDisposable
         Assert.AreEqual(1, GetValue("test_int_counter", ("l1", "value"), ("l2", "111")));
         _intCounter.Add(1000);
         _intCounter.Add(1000, new("l1", "value"), new("l2", 0));
-        _intCounter.Add(1000, new KeyValuePair<string, object?>("l1", "value"));
+        _intCounter.Add(1000, new KeyValuePair<string, object>("l1", "value"));
         _intCounter.Add(1, new("l2", 111), new("l1", "value"));
         Assert.AreEqual(2, GetValue("test_int_counter", ("l1", "value"), ("l2", "111")));
         Assert.AreEqual(1000, GetValue("test_int_counter", ("l1", "value"), ("l2", "0")));
